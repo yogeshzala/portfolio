@@ -4,18 +4,16 @@ import Heading from "../../components/Heading";
 import Button from "../../components/Button";
 import InputBox from "../../components/InputBox";
 
-import { EnvelopeIcon } from "@heroicons/react/24/solid";
-
 import { motion } from "framer-motion";
 
 const onSubmit = () => {
   document.getElementById("form").reset();
 };
 
-export default function Contact() {
+export default function ContactMe() {
   return (
     <section>
-      <div className="min-h-screen p-10 sm:py-20 max-sm:px-6 max-md:px-11 max-lg:px-16 lg:pl-16 xl:pl-28 flex flex-col justify-evenly">
+      <div className="min-h-screen py-5 sm:py-14 lg:py-20">
         <div className="flex gap-3 text-3xl sm:text-6xl text-red-600 font-concertOne mb-4 sm:mb-12">
           <Heading text="Contact" /> <Heading text="Me" />
         </div>
@@ -37,7 +35,7 @@ export default function Contact() {
             <Button type="button" text="Send" onClick={onSubmit} />
           </motion.form>
           <div className="flex items-center justify-center px-2 mt-20 lg:mt-0 max-lg:order-1">
-            <EnvelopeIcon className="w-52 sm:w-96 text-red-600 animate-bounce" />
+            {/* <EnvelopeIcon className="w-52 sm:w-96 text-red-600 animate-bounce" /> */}
           </div>
         </div>
       </div>

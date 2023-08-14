@@ -2,8 +2,6 @@ import React from "react";
 
 import portfolio from "../../assets/images/portfolio.jpg";
 
-import { LinkIcon } from "@heroicons/react/24/solid";
-
 export default function Card() {
   return (
     <section>
@@ -16,11 +14,11 @@ export default function Card() {
           />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-20 group-hover:-translate-y-1/2 flex gap-2 sm:gap-5 font-concertOne text-base sm:text-2xl text-white opacity-0 group-hover:opacity-100 duration-500">
             <div className="flex gap-1 items-center hover:scale-105 duration-300 cursor-pointer">
-              <LinkIcon className="w-3 sm:w-6" />
+              {/* <LinkIcon className="w-3 sm:w-6" /> */}
               <p>GitHub</p>
             </div>
             <div className="flex gap-1 items-center hover:scale-105 duration-300 cursor-pointer">
-              <LinkIcon className="w-3 sm:w-6" />
+              {/* <LinkIcon className="w-3 sm:w-6" /> */}
               <p>Live</p>
             </div>
           </div>

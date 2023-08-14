@@ -2,8 +2,6 @@ import React, { useContext } from "react";
 import Heading from "../../components/Heading";
 import { AppContext } from "../../App";
 
-import { ArrowLeftCircleIcon } from "@heroicons/react/24/solid";
-
 export default function PageNotFound() {
   const { navigate } = useContext(AppContext);
 
@@ -18,7 +16,7 @@ export default function PageNotFound() {
             Oops, Page Not Found
           </p>
           <div className="flex items-center gap-3 text-white hover:text-red-600 cursor-pointer hover:scale-110 duration-200">
-            <ArrowLeftCircleIcon className="w-4 sm:w-6" />
+            {/* <ArrowLeftCircleIcon className="w-4 sm:w-6" /> */}
             <p
               className="font-concertOne text-base sm:text-2xl"
               onClick={() => {

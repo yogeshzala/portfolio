@@ -24,7 +24,7 @@ export default function Portfolio() {
   };
   return (
     <section>
-      <div className="min-h-screen py-10 sm:py-20 px-6 sm:px-11 md:px-16 lg:px-16 xl:px-28 flex flex-col justify-evenly">
+      <div className="min-h-screen py-5 sm:py-14 lg:py-20">
         <div className="flex gap-3 text-3xl sm:text-6xl text-red-600 font-concertOne mb-4 sm:mb-12">
           <Heading text="Portfolio" />
         </div>

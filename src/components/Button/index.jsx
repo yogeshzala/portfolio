@@ -6,7 +6,7 @@ export default function Button(props) {
       <button
         type={props.type}
         onClick={props.onClick}
-        className="px-10 py-2 bg-slate-950 text-red-600 text-xl font-concertOne border-red-600 border-2 rounded-lg hover:text-slate-950 hover:bg-red-600 duration-500 focus:outline-none"
+        className="px-6 sm:px-10 py-1 sm:py-2 text-lg sm:text-xl bg-secondary text-primary font-concertOne border-primary border-2 rounded-lg hover:text-secondary hover:bg-primary duration-500 focus:outline-none"
       >
         {props.text}
       </button>

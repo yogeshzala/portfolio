@@ -1,11 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Heading from "../../components/Heading";
-
-import { CubeTransparentIcon } from "@heroicons/react/24/solid";
 
 import { motion } from "framer-motion";
 
-export default function About() {
+export default function AboutMe() {
   const container = {
     initial: { opacity: 1 },
     animate: {
@@ -20,13 +18,13 @@ export default function About() {
       y: 0,
       opacity: 1,
     },
-    transition: { duration: 0.8 },
+    transition: { duration: 0.5 },
   };
 
   return (
-    <section>
-      <div className="min-h-screen py-10 sm:py-20 max-sm:px-6 max-md:px-11 max-lg:px-16 lg:pl-16 xl:pl-28 flex flex-col justify-evenly">
-        <div className="flex gap-3 text-3xl sm:text-6xl text-red-600 font-concertOne mb-4 sm:mb-12">
+    <Fragment>
+      <div className="min-h-screen py-5 sm:py-14 lg:py-20">
+        <div className="flex gap-3 text-3xl sm:text-6xl text-primary font-concertOne mb-4 sm:mb-12">
           <Heading text="About" /> <Heading text="Me" />
         </div>
         <motion.div
@@ -37,7 +35,7 @@ export default function About() {
         >
           <div className="max-lg:order-2">
             <div className="flex flex-col gap-2 sm:gap-5">
-              <h3 className="font-concertOne text-xl sm:text-4xl text-red-600">
+              <h3 className="font-concertOne text-xl sm:text-4xl text-primary">
                 Full Stack Developer
               </h3>
               <div className="flex flex-col gap-2 sm:gap-3">
@@ -67,7 +65,7 @@ export default function About() {
               </div>
             </div>
             <div className="flex flex-col gap-2 sm:gap-5 mt-4 sm:mt-12">
-              <h3 className="font-concertOne text-xl sm:text-4xl text-red-600">
+              <h3 className="font-concertOne text-xl sm:text-4xl text-primary">
                 Personal Info.
               </h3>
               <motion.div
@@ -82,7 +80,10 @@ export default function About() {
                   Age : 21
                 </p>
                 <p className="font-concertOne text-sm sm:text-xl text-white">
-                  Email : yogeshzala1511@gmail.com
+                  Email :{" "}
+                  <a href="mailto:yogeshzala1511@gmail.com">
+                    yogeshzala1511@gmail.com
+                  </a>
                 </p>
                 <p className="font-concertOne text-sm sm:text-xl text-white">
                   Location : Ahmedabad, Guajarat, India
@@ -101,11 +102,11 @@ export default function About() {
                 repeatType: "reverse",
               }}
             >
-              <CubeTransparentIcon className="w-52 sm:w-96 text-red-600" />
+              {/* <CubeTransparentIcon className="w-52 sm:w-96 text-primary" /> */}
             </motion.div>
           </div>
         </motion.div>
       </div>
-    </section>
+    </Fragment>
   );
 }
