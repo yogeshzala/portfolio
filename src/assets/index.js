@@ -1,4 +1,6 @@
 import Logo from "./images/logo.svg";
+import AboutMeVector from "./images/aboutMe.svg";
+import ContactMeVector from "./images/contactMe.svg";
 
 import {
   faBriefcase,
@@ -17,6 +19,8 @@ import {
 
 export const IMAGES = {
   Logo,
+  AboutMeVector,
+  ContactMeVector,
 };
 
 export const ICONS = {

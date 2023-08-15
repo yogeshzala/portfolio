@@ -46,7 +46,7 @@ export default function Home() {
               navigate("/contactMe");
             }}
           />
-          <div className="flex gap-5 items-center self-end">
+          <div className="flex gap-5 items-center self-end select-none">
             {SocialLinks.map(({ id, ...link }) => (
               <a {...link} key={id}>
                 <FontAwesomeIcon

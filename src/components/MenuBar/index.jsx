@@ -17,7 +17,7 @@ export default function MenuBar() {
         <div className="min-h-screen bg-primary fixed right-0 p-2 mr-2 sm:p-3 sm:mr-4 flex flex-col justify-evenly">
           {MENU_ITEMS.map(({ id, path, ...item }) => (
             <Link key={id} to={path}>
-              <div className="relative flex group">
+              <div className="relative flex group select-none">
                 <div
                   className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all ease-in-out duration-500 h-12 w-12 sm:h-16 sm:w-16 -ml-4 sm:-ml-5 rounded-full ${
                     location.pathname === path

@@ -12,10 +12,10 @@ export default function Skills() {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8 lg:gap-16 xl:gap-28 w-full">
           <div className="flex flex-col gap-4 sm:gap-8">
-            <p className="text-primary font-concertOne text-2xl sm:text-5xl flex gap-1">
-              <span className="text-white text-2xl sm:text-5xl">(</span>Front
+            <p className="text-primary font-concertOne text-2xl sm:text-4xl flex gap-1">
+              <span className="text-white text-2xl sm:text-4xl">(</span>Front
               End
-              <span className="text-white text-2xl sm:text-5xl">)</span>
+              <span className="text-white text-2xl sm:text-4xl">)</span>
             </p>
             <ProgressBar text="HTML / CSS" value="90" />
             <ProgressBar text="JavaScript" value="80" />
@@ -24,9 +24,9 @@ export default function Skills() {
             <ProgressBar text="Angular" value="45" />
           </div>
           <div className="flex flex-col gap-4 sm:gap-8 mt-2 sm:mt-3">
-            <p className="text-primary font-concertOne text-2xl sm:text-5xl flex gap-1">
-              <span className="text-white text-2xl sm:text-5xl">(</span>Back End
-              <span className="text-white text-2xl sm:text-5xl">)</span>
+            <p className="text-primary font-concertOne text-2xl sm:text-4xl flex gap-1">
+              <span className="text-white text-2xl sm:text-4xl">(</span>Back End
+              <span className="text-white text-2xl sm:text-4xl">)</span>
             </p>
             <ProgressBar text="Node.js" value="60" />
             <ProgressBar text="Express.js" value="55" />

@@ -3,8 +3,11 @@ module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   theme: {
     extend: {
+      height: {
+        screen: "100dvh",
+      },
       minHeight: {
-        "screen": "100dvh",
+        screen: "100dvh",
       },
       fontFamily: {
         monoton: ["Monoton", "cursive"],

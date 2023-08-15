@@ -8,7 +8,7 @@ export default function Heading(props) {
   }, [props.text]);
 
   return (
-    <div className="flex">
+    <div className="flex select-none">
       {text.map((char, i) => {
         return (
           <p key={i} className="hover:-translate-y-2 duration-500">

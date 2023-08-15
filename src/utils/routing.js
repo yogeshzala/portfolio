@@ -29,7 +29,7 @@ export const MENU_ITEMS = [
   { id: 1, icon: ICONS.Home, path: URLS.HOME.url },
   { id: 2, icon: ICONS.AboutMe, path: URLS.ABOUT_ME.url },
   { id: 3, icon: ICONS.Skills, path: URLS.SKILLS.url },
-  { id: 4, icon: ICONS.Resume, path: URLS.RESUME.url },
-  { id: 5, icon: ICONS.Portfolio, path: URLS.PORTFOLIO.url },
+  // { id: 4, icon: ICONS.Resume, path: URLS.RESUME.url },
+  // { id: 5, icon: ICONS.Portfolio, path: URLS.PORTFOLIO.url },
   { id: 6, icon: ICONS.ContactMe, path: URLS.CONTACT_ME.url },
 ];

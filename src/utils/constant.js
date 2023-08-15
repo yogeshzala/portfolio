@@ -1,5 +1,7 @@
 import { ICONS } from "../assets";
 
+export const emailRegEx = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
+
 export const SocialLinks = [
   {
     id: 1,
