@@ -7,6 +7,7 @@ import InputBox from "../../components/InputBox";
 import { motion } from "framer-motion";
 import { IMAGES } from "../../assets";
 import { testEmail } from "../../utils/helper";
+import Modal from "../../components/Modal";
 
 export default function ContactMe() {
   const [formValues, setFormValues] = useState({
@@ -15,8 +16,8 @@ export default function ContactMe() {
     message: "",
   });
   const [formErrors, setFromErrors] = useState({});
-  console.log("🚀 ~ file: index.jsx:22 ~ ContactMe ~ formErrors:", formErrors);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [thankYouModalOpen, setThankYouModalOpen] = useState(false);
 
   const validateForm = useCallback(() => {
     const { name, email, message } = formValues;
@@ -57,8 +58,9 @@ export default function ContactMe() {
 
   return (
     <Fragment>
-      <div className="min-h-screen sm:h-screen grid grid-cols-1 lg:grid-cols-2 w-full">
-        <motion.div className="overflow-auto py-5 sm:py-14 lg:py-20 flex flex-col justify-evenly">
+      <Modal open={thankYouModalOpen} setOpen={setThankYouModalOpen} />
+      <div className="min-h-screen grid grid-cols-1 lg:grid-cols-2 w-full">
+        <motion.div className="py-5 sm:py-14 lg:py-20 flex flex-col justify-evenly">
           <div className="flex gap-3 text-3xl sm:text-6xl text-primary font-concertOne mb-4 sm:mb-12">
             <Heading text="Contact" /> <Heading text="Me" />
           </div>
@@ -121,10 +123,15 @@ export default function ContactMe() {
                 </p>
               )}
             </div>
-            <Button type="submit" text="Send" />
+            <Button
+              type="submit"
+              text="Send"
+              loading={false}
+              onClick={() => setThankYouModalOpen(true)}
+            />
           </motion.form>
         </motion.div>
-        <div className="flex items-center justify-center pl-20 max-lg:hidden">
+        <div className="h-screen flex items-center justify-center pl-20 max-lg:hidden sticky top-0">
           <motion.div
             initial={{ y: 10 }}
             animate={{ y: -10 }}

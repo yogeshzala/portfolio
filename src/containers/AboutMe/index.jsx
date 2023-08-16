@@ -24,12 +24,12 @@ export default function AboutMe() {
 
   return (
     <Fragment>
-      <div className="h-screen grid grid-cols-1 lg:grid-cols-2 w-full">
+      <div className="min-h-screen grid grid-cols-1 lg:grid-cols-2 w-full">
         <motion.div
           variants={container}
           initial="initial"
           animate="animate"
-          className="overflow-auto py-5 sm:py-14 lg:py-20"
+          className="py-5 sm:py-14 lg:py-20"
         >
           <div className="flex gap-3 text-3xl sm:text-6xl text-primary font-concertOne mb-4 sm:mb-12">
             <Heading text="About" /> <Heading text="Me" />
@@ -62,12 +62,14 @@ export default function AboutMe() {
                 transition="transition"
                 className="font-concertOne text-sm sm:text-xl text-white"
               >
-                I am a full stack developer with expertise in React.js and
-                Node.js, I bring a wealth of technical knowledge and creativity
-                to my work. I am skilled at building cutting-edge web
-                applications that deliver exceptional user experiences, and I am
-                always eager to take on new challenges and push the boundaries
-                of what's possible in web development.
+                Welcome to my portfolio website! I'm{" "}
+                <span className="text-primary">Yogesh Zala</span>, a full stack
+                developer with expertise in React.js and Node.js, I bring a
+                wealth of technical knowledge and creativity to my work. I am
+                skilled at building cutting-edge web applications that deliver
+                exceptional user experiences. I am always eager to take on
+                new challenges and push the boundaries of what's possible in web
+                development.
               </motion.p>
               <motion.p
                 variants={paragraph}
@@ -111,7 +113,7 @@ export default function AboutMe() {
             </motion.div>
           </div>
         </motion.div>
-        <div className="flex items-center justify-center pl-20 max-lg:hidden">
+        <div className="h-screen flex items-center justify-center pl-20 max-lg:hidden sticky top-0">
           <motion.div
             initial={{ y: 10 }}
             animate={{ y: -10 }}

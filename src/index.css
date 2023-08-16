@@ -11,6 +11,10 @@ body {
   width: 0px;
 }
 
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 @font-face {
   font-family: "Monoton";
   src: url("./assets/fonts/Monoton-Regular.woff") format("woff");

@@ -12,7 +12,7 @@ export default function Home() {
   const { navigate } = useContext(AppContext);
 
   return (
-    <div className="min-h-screen py-5 sm:py-14 lg:py-20 flex justify-center items-center gap-4 sm:gap-10 max-lg:flex-wrap">
+    <div className="min-h-screen py-5 sm:py-14 lg:py-20 flex justify-center items-center gap-4 sm:gap-10 max-lg:flex-col max-lg:justify-evenly">
       <motion.img
         initial={{ scale: 0.8 }}
         animate={{ scale: 1 }}
@@ -46,7 +46,7 @@ export default function Home() {
               navigate("/contactMe");
             }}
           />
-          <div className="flex gap-5 items-center self-end select-none">
+          <div className="flex gap-5 items-center self-end">
             {SocialLinks.map(({ id, ...link }) => (
               <a {...link} key={id}>
                 <FontAwesomeIcon

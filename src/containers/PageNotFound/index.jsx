@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import Heading from "../../components/Heading";
 import { AppContext } from "../../App";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ICONS } from "../../assets";
 
 export default function PageNotFound() {
   const { navigate } = useContext(AppContext);
@@ -15,15 +17,15 @@ export default function PageNotFound() {
           <p className="text-red-600 text-2xl sm:text-5xl font-bold font-concertOne">
             Oops, Page Not Found
           </p>
-          <div className="flex items-center gap-3 text-white hover:text-red-600 cursor-pointer hover:scale-110 duration-200">
+          <div className="flex items-center gap-3 text-white hover:text-red-600 cursor-pointer hover:scale-105 duration-200 transition-all">
             {/* <ArrowLeftCircleIcon className="w-4 sm:w-6" /> */}
             <p
-              className="font-concertOne text-base sm:text-2xl"
+              className="font-concertOne text-base sm:text-2xl flex items-center gap-2 sm:gap-3"
               onClick={() => {
                 navigate("/");
               }}
             >
-              Go Back to Site
+              <FontAwesomeIcon icon={ICONS.arrowLeft} className=""/> Go Back to Site
             </p>
           </div>
         </div>

@@ -4,11 +4,15 @@ import ContactMeVector from "./images/contactMe.svg";
 
 import {
   faBriefcase,
+  faCircleArrowLeft,
   faCircleInfo,
+  faCircleNotch,
   faCode,
   faEnvelope,
+  faEnvelopeCircleCheck,
   faFileInvoice,
   faHouse,
+  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedin,
@@ -34,4 +38,8 @@ export const ICONS = {
   GitHub: faGithubSquare,
   X: faSquareXTwitter,
   Instagram: faSquareInstagram,
+  Spinner: faCircleNotch,
+  Close: faXmark,
+  messageSuccess: faEnvelopeCircleCheck,
+  arrowLeft: faCircleArrowLeft,
 };

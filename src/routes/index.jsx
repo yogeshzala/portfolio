@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import PageNotFound from "../containers/PageNotFound";
 
@@ -8,11 +8,16 @@ import MainLayout from "../layouts/MainLayout";
 import MenuBar from "../components/MenuBar";
 
 export default function Routing() {
+  const [is404, setIs404] = useState();
   const location = useLocation();
+
+  useEffect(() => {
+    setIs404(ROUTES.some((route) => route.path === location.pathname));
+  }, [location]);
 
   return (
     <Fragment>
-      <MenuBar />
+      {is404 && <MenuBar />}
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route element={<MainLayout />}>
