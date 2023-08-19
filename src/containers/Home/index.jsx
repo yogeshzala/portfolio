@@ -48,7 +48,7 @@ export default function Home() {
           />
           <div className="flex gap-5 items-center self-end">
             {SocialLinks.map(({ id, ...link }) => (
-              <a {...link} key={id}>
+              <a {...link} key={id} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   {...link}
                   className="h-8 sm:h-9 text-primary hover:-translate-y-2 duration-500 cursor-pointer"
